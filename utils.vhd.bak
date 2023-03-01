@@ -1,0 +1,14 @@
+PACKAGE utils IS
+	CONSTANT n_bits: INTEGER := 8;
+	 
+	COMPONENT mux_8_1 IS
+		GENERIC(n : INTEGER := 8);
+	
+		PORT(
+			in_0, in_1, in_2, in_3: IN  STD_LOGIC_VECTOR(n - 1 DOWNTO 0);
+			in_4, in_5, in_6, in_7: IN  STD_LOGIC_VECTOR(n - 1 DOWNTO 0);
+			sel 	: IN  STD_LOGIC(2 DOWNTO 0);
+			saida	: OUT STD_LOGIC_VECTOR(n - 1 DOWNTO 0)
+		)
+	END COMPONENT;
+END PACKAGE BODY utils;

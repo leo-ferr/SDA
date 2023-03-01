@@ -1,0 +1,10 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE WORK.UTILS.ALL;
+
+ENTITY somador IS
+	GENERIC( n : INTEGER := n_bits)
+	PORT(
+		
+	);
+END somador;

@@ -1,0 +1,26 @@
+ENTITY ieee;
+use ieee.std_logic_1164.all;
+
+entity comparador is
+	port(
+		a, b: std_logic;
+		s: out std_logic
+	);
+end comparador;
+
+architecture behavior of somador is
+
+	signal s: std_logic;
+	
+begin
+	process(a, b)
+	begin
+		s <= '0';
+		
+		if a = b then
+			s <= '1';
+		end if
+	end process;
+	
+	saida <= s;
+end behavior;

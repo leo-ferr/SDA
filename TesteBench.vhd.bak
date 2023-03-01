@@ -1,0 +1,39 @@
+library ieee;
+library work;
+use work.utils.all;
+use ieee.std_logic_1164.all;
+
+entity TesteBench is
+
+end TesteBench;
+
+architecture arch_teste of TesteBench is
+
+	component datapath is
+		port(
+			-- entradas
+			clock, reset: in  STD_LOGIC;
+			data_in		: in  STD_LOGIC_VECTOR(7 downto 0);
+			c 				: in  STD_LOGIC_VECTOR(28 downto 0);
+			-- flags
+			N,Z,Ov,Cout : out STD_LOGIC;
+		
+			-- debug
+			DEBUG : in matriz_8bits(7 downto 0);
+		
+			-- saida dados
+			data_out		: out STD_LOGIC_VECTOR(7 downto 0)
+	
+		);
+	end component;
+
+
+begin
+	
+	DUT: 
+	
+	process
+	begin
+		
+	end process;	
+end arch_teste;

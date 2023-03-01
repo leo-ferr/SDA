@@ -1,0 +1,10 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY somador_completo IS
+	PORT(
+		a, b : IN  STD_LOGIC;
+		carry: OUT STD_LOGIC;
+		saida: OUT STD_LOGIC
+	);
+END somador_completo;

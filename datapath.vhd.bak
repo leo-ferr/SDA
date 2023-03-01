@@ -1,0 +1,8 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY datapath IS
+	PORT(
+		clock, reset: IN STD_LOGIC;
+	);
+END datapath;
