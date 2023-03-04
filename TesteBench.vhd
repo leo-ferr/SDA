@@ -14,41 +14,63 @@ architecture arch_teste of TesteBench is
 			-- entradas
 			clock, reset: in  STD_LOGIC;
 			data_in		: in  STD_LOGIC_VECTOR(7 downto 0);
-			c 				: in  STD_LOGIC_VECTOR(28 downto 0);
+			c 				: in  STD_LOGIC_VECTOR(28 downto 0)
 			-- flags
-			N,Z,Ov,Cout : out STD_LOGIC;
+			--N,Z,Ov,Cout : out STD_LOGIC;
 		
 			-- debug
-			DEBUG : in matriz_8bits(7 downto 0);
+			--DEBUG : in matriz_8bits
 		
 			-- saida dados
-			data_out		: out STD_LOGIC_VECTOR(7 downto 0)
+			--data_out		: out STD_LOGIC_VECTOR(7 downto 0)
 	
 		);
 	end component;
 	
-	signal clk, rst, d_in, ctl, d_out, z_out, n_out, ov_out, cout_out: std_logic;
+	signal clock: std_logic;
+	signal reset: std_logic;
+	signal data_in: std_logic_vector(7 downto 0);
+	signal C: std_logic_vector(28 downto 0);
+	--signal DEBUG_saida: matriz_8bits;
+	--signal Z: std_logic;
+	--signal N: std_logic;
+	--signal Ov: std_logic;
+	--signal Cout: std_logic;
+	--signal data_out: std_logic;
 
 begin
-	
+	--DEBUG <= DEBUG_saida;
 	DUT: datapath port map(
-		clock <= clk,
-		reset <= rst,
-		data_in <= d_in,
-		C <= ctl,
-		Z <= z_out,
-		N <= n_out,
-		Ov <= ov_out,
-		Cout <= cout_out,
-		data_out <= d_out
+		clock => clock,
+		reset => reset,
+		data_in => data_in,
+		C => C
+		--DEBUG => DEBUG
+		--Z => open,
+		--N => open,
+		--Ov => open,
+		--Cout => open,
+		--data_out => open
 	);
 	
-	process
+	reset <= '1', '0' after 100 ps;
+	
+	clock_signal: process
+  begin
+    clock <= '1', '0' after 1ns;
+    wait for 2ns;
+  end process;
+	
+	main: process
 	begin
 		
-		
-		
-		
+		data_in <= (others => '0');
+    C <= (others => '0');
+    wait for 3ns;
+    
+		data_in <= "01010000";
+		C <= (8 => '1', 14 => '1', others => '0');
+		wait;
 		
 	end process;	
 end arch_teste;

@@ -1,0 +1,204 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "03/03/2023 10:56:43"
+                                                                                
+// Verilog Test Bench template for design : datapath
+// 
+// Simulation tool : ModelSim (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module datapath_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [28:0] c;
+reg clock;
+reg [7:0] data_in;
+reg reset;
+// wires                                               
+wire Cout;
+wire [7:0]  data_out;
+wire DEBUG_7_7;
+wire DEBUG_7_6;
+wire DEBUG_7_5;
+wire DEBUG_7_4;
+wire DEBUG_7_3;
+wire DEBUG_7_2;
+wire DEBUG_7_1;
+wire DEBUG_7_0;
+wire DEBUG_6_7;
+wire DEBUG_6_6;
+wire DEBUG_6_5;
+wire DEBUG_6_4;
+wire DEBUG_6_3;
+wire DEBUG_6_2;
+wire DEBUG_6_1;
+wire DEBUG_6_0;
+wire DEBUG_5_7;
+wire DEBUG_5_6;
+wire DEBUG_5_5;
+wire DEBUG_5_4;
+wire DEBUG_5_3;
+wire DEBUG_5_2;
+wire DEBUG_5_1;
+wire DEBUG_5_0;
+wire DEBUG_4_7;
+wire DEBUG_4_6;
+wire DEBUG_4_5;
+wire DEBUG_4_4;
+wire DEBUG_4_3;
+wire DEBUG_4_2;
+wire DEBUG_4_1;
+wire DEBUG_4_0;
+wire DEBUG_3_7;
+wire DEBUG_3_6;
+wire DEBUG_3_5;
+wire DEBUG_3_4;
+wire DEBUG_3_3;
+wire DEBUG_3_2;
+wire DEBUG_3_1;
+wire DEBUG_3_0;
+wire DEBUG_2_7;
+wire DEBUG_2_6;
+wire DEBUG_2_5;
+wire DEBUG_2_4;
+wire DEBUG_2_3;
+wire DEBUG_2_2;
+wire DEBUG_2_1;
+wire DEBUG_2_0;
+wire DEBUG_1_7;
+wire DEBUG_1_6;
+wire DEBUG_1_5;
+wire DEBUG_1_4;
+wire DEBUG_1_3;
+wire DEBUG_1_2;
+wire DEBUG_1_1;
+wire DEBUG_1_0;
+wire DEBUG_0_7;
+wire DEBUG_0_6;
+wire DEBUG_0_5;
+wire DEBUG_0_4;
+wire DEBUG_0_3;
+wire DEBUG_0_2;
+wire DEBUG_0_1;
+wire DEBUG_0_0;
+wire N;
+wire Ov;
+wire Z;
+
+// assign statements (if any)                          
+datapath i1 (
+// port map - connection between master ports and signals/registers   
+	.c(c),
+	.clock(clock),
+	.Cout(Cout),
+	.data_in(data_in),
+	.data_out(data_out),
+	.DEBUG_7_7(DEBUG_7_7),
+	.DEBUG_7_6(DEBUG_7_6),
+	.DEBUG_7_5(DEBUG_7_5),
+	.DEBUG_7_4(DEBUG_7_4),
+	.DEBUG_7_3(DEBUG_7_3),
+	.DEBUG_7_2(DEBUG_7_2),
+	.DEBUG_7_1(DEBUG_7_1),
+	.DEBUG_7_0(DEBUG_7_0),
+	.DEBUG_6_7(DEBUG_6_7),
+	.DEBUG_6_6(DEBUG_6_6),
+	.DEBUG_6_5(DEBUG_6_5),
+	.DEBUG_6_4(DEBUG_6_4),
+	.DEBUG_6_3(DEBUG_6_3),
+	.DEBUG_6_2(DEBUG_6_2),
+	.DEBUG_6_1(DEBUG_6_1),
+	.DEBUG_6_0(DEBUG_6_0),
+	.DEBUG_5_7(DEBUG_5_7),
+	.DEBUG_5_6(DEBUG_5_6),
+	.DEBUG_5_5(DEBUG_5_5),
+	.DEBUG_5_4(DEBUG_5_4),
+	.DEBUG_5_3(DEBUG_5_3),
+	.DEBUG_5_2(DEBUG_5_2),
+	.DEBUG_5_1(DEBUG_5_1),
+	.DEBUG_5_0(DEBUG_5_0),
+	.DEBUG_4_7(DEBUG_4_7),
+	.DEBUG_4_6(DEBUG_4_6),
+	.DEBUG_4_5(DEBUG_4_5),
+	.DEBUG_4_4(DEBUG_4_4),
+	.DEBUG_4_3(DEBUG_4_3),
+	.DEBUG_4_2(DEBUG_4_2),
+	.DEBUG_4_1(DEBUG_4_1),
+	.DEBUG_4_0(DEBUG_4_0),
+	.DEBUG_3_7(DEBUG_3_7),
+	.DEBUG_3_6(DEBUG_3_6),
+	.DEBUG_3_5(DEBUG_3_5),
+	.DEBUG_3_4(DEBUG_3_4),
+	.DEBUG_3_3(DEBUG_3_3),
+	.DEBUG_3_2(DEBUG_3_2),
+	.DEBUG_3_1(DEBUG_3_1),
+	.DEBUG_3_0(DEBUG_3_0),
+	.DEBUG_2_7(DEBUG_2_7),
+	.DEBUG_2_6(DEBUG_2_6),
+	.DEBUG_2_5(DEBUG_2_5),
+	.DEBUG_2_4(DEBUG_2_4),
+	.DEBUG_2_3(DEBUG_2_3),
+	.DEBUG_2_2(DEBUG_2_2),
+	.DEBUG_2_1(DEBUG_2_1),
+	.DEBUG_2_0(DEBUG_2_0),
+	.DEBUG_1_7(DEBUG_1_7),
+	.DEBUG_1_6(DEBUG_1_6),
+	.DEBUG_1_5(DEBUG_1_5),
+	.DEBUG_1_4(DEBUG_1_4),
+	.DEBUG_1_3(DEBUG_1_3),
+	.DEBUG_1_2(DEBUG_1_2),
+	.DEBUG_1_1(DEBUG_1_1),
+	.DEBUG_1_0(DEBUG_1_0),
+	.DEBUG_0_7(DEBUG_0_7),
+	.DEBUG_0_6(DEBUG_0_6),
+	.DEBUG_0_5(DEBUG_0_5),
+	.DEBUG_0_4(DEBUG_0_4),
+	.DEBUG_0_3(DEBUG_0_3),
+	.DEBUG_0_2(DEBUG_0_2),
+	.DEBUG_0_1(DEBUG_0_1),
+	.DEBUG_0_0(DEBUG_0_0),
+	.N(N),
+	.Ov(Ov),
+	.reset(reset),
+	.Z(Z)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

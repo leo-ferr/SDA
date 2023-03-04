@@ -1,0 +1,73 @@
+C:/Users/leonardo/Desktop/sda/SDA/TesteBench.vhd {2 {vcom -work work -2002 -explicit {C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity TesteBench
+-- Compiling architecture arch_teste of TesteBench
+** Warning: [4] C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} C:/Users/leonardo/Desktop/sda/SDA/somador.vhd {1 {vcom -work work -2002 -explicit C:/Users/leonardo/Desktop/sda/SDA/somador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity somador
+-- Compiling architecture behavior of somador
+
+} {} {}} C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd {1 {vcom -work work -2002 -explicit {C:\Users\leonardo\Desktop\sda\SDA\datapath.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity datapath
+-- Compiling architecture behavior of datapath
+
+} {} {}} C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd {1 {vcom -work work -2002 -explicit C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity somador_completo
+-- Compiling architecture behavior of somador_completo
+
+} {} {}} C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd {1 {vcom -work work -2002 -explicit C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity somador_4b
+-- Compiling architecture arq_somador_4b of somador_4b
+
+} {} {}} C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity mux_2_1
+-- Compiling architecture behavior of mux_2_1
+
+} {} {}} C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd {1 {vcom -work work -2002 -explicit C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity registrador
+-- Compiling architecture behavior of registrador
+
+} {} {}} C:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd {1 {vcom -work work -2002 -explicit C:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity latch_d
+-- Compiling architecture arq_latch_d of latch_d
+
+} {} {}}

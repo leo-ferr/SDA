@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\leonardo\Desktop\sda\SDA\simulation\modelsim
+vdatapath
+!i10b 1
+!s100 nDoFMZBK4N_5E6ZIRecl90
+IQV7KgIgE:e6E7>Y2jUhW11
+VcfiY_BzZ5DJLBZIf1Ag5O0
+Z1 dC:\Users\leonardo\Desktop\sda\SDA\simulation\modelsim
+w1677850453
+8datapath.vo
+Fdatapath.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1677850512.913000
+!s107 datapath.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|datapath.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

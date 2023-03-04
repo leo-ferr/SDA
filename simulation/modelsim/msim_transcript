@@ -1,0 +1,521 @@
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.datapath 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.utils
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+# do datapath_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:/Users/leonardo/Desktop/sda/SDA/simulation/modelsim/datapath.mpf
+# 
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/utils.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package utils
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity registrador
+# -- Compiling architecture behavior of registrador
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity datapath
+# -- Compiling architecture behavior of datapath
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity mux_2_1
+# -- Compiling architecture behavior of mux_2_1
+# 
+quit -sim
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Skipping entity datapath
+# -- Skipping entity mux_2_1
+# -- Skipping entity registrador
+# -- Skipping package utils
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity datapath
+# -- Compiling architecture behavior of datapath
+# -- Compiling entity mux_2_1
+# -- Compiling architecture behavior of mux_2_1
+# -- Compiling entity registrador
+# -- Compiling architecture behavior of registrador
+# -- Compiling package utils
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of FA.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of ula1.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 11 compiles, 0 failed with no errors. 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+# ** Failure: (vsim-3808) Incompatible modes for port "DEBUG".
+#    Time: 0 ps  Iteration: 0  Instance: /testebench/DUT File: C:/Users/leonardo/Desktop/sda/SDA/TesteBench.vhd Line: 48
+# Fatal error at C:/Users/leonardo/Desktop/sda/SDA/TesteBench.vhd line 48
+#  while elaborating region: /testebench
+# Error loading design
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd failed with 2 errors.
+# 9 compiles, 1 failed with 2 errors. 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd failed with 2 errors.
+# 9 compiles, 1 failed with 2 errors. 
+# Compile of datapath.vhd failed with 1 errors.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd failed with 1 errors.
+# 9 compiles, 2 failed with 2 errors. 
+# Compile of datapath.vhd failed with 1 errors.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd failed with 2 errors.
+# 9 compiles, 2 failed with 3 errors. 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd failed with 2 errors.
+# 9 compiles, 1 failed with 2 errors. 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+# do datapath_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:/Users/leonardo/Desktop/sda/SDA/simulation/modelsim/datapath.mpf
+# 
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/utils.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package utils
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity registrador
+# -- Compiling architecture behavior of registrador
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity datapath
+# -- Compiling architecture behavior of datapath
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity mux_2_1
+# -- Compiling architecture behavior of mux_2_1
+# 
+add wave -position insertpoint sim:/testebench/*
+restart
+add wave -position insertpoint sim:/testebench/*
+run
+run -all
+# Break key hit 
+# Break in Architecture behavior at C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd line 19
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+add wave -position insertpoint sim:/testebench/*
+restart -f
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# ** Error: (vsim-13) Recompile work.datapath because work.utils has changed.
+# 
+# ** Error: (vsim-13) Recompile work.datapath(behavior) because work.utils has changed.
+# 
+# Load interrupted
+vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench 
+# Error loading design
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+# do datapath_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:/Users/leonardo/Desktop/sda/SDA/simulation/modelsim/datapath.mpf
+# 
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/utils.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package utils
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity registrador
+# -- Compiling architecture behavior of registrador
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd}
+add wave -position insertpoint sim:/testebench/*
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity datapath
+# -- Compiling architecture behavior of datapath
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity mux_2_1
+# -- Compiling architecture behavior of mux_2_1
+# 
+# Load canceled
+run
+run -all
+# Break key hit 
+# Break in Process line__22 at C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd line 22
+add wave -position insertpoint sim:/testebench/DUT/for_regs(0)/*
+# (vish-4014) No objects found matching '/testebench/DUT/for_regs(0)/*'.
+add wave -position insertpoint sim:/testebench/DUT/*
+restart -f
+# ** Error: (vsim-3170) Could not find 'C:/Users/leonardo/Desktop/sda/SDA/simulation/modelsim/rtl_work.testebench'.
+# 
+# Load canceled
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Load canceled
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench 
+# Error loading design
+vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# ** Error: (vsim-13) Recompile work.datapath because work.utils has changed.
+# 
+# ** Error: (vsim-13) Recompile work.datapath(behavior) because work.utils has changed.
+# 
+# Load interrupted
+# Error loading design
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench
+# vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testebench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+# do datapath_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:/Users/leonardo/Desktop/sda/SDA/simulation/modelsim/datapath.mpf
+# 
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/utils.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package utils
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity registrador
+# -- Compiling architecture behavior of registrador
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity datapath
+# -- Compiling architecture behavior of datapath
+# vcom -93 -work work {C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package utils
+# -- Compiling entity mux_2_1
+# -- Compiling architecture behavior of mux_2_1
+# 
+add wave -position insertpoint sim:/testebench/*
+add wave -position insertpoint sim:/testebench/DUT/*
+run -next
+run -next
+run -next
+run -next
+# Break key hit 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+# Break key hit 
+restart -f -nolist
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+run -next
+run -next
+run -next
+run -next
+run -next
+run -next
+run -next
+run -next
+run -next
+run -next
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+# Break key hit 
+restart -f -nolist
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+run -next
+run -next
+run -next
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -next
+run -next
+# Break key hit 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+restart -f -nolist
+# Loading work.utils
+# Loading work.testebench(arch_teste)
+# Loading work.datapath(behavior)
+# Loading work.mux_2_1(behavior)
+# Loading work.registrador(behavior)
+run -next
+run -next
+run -next
+run -next
+run -next
+
+run -next
+run -next
+run -next
+# Break key hit 
+# Compile of datapath.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of latch_d.vhd was successful.
+# Compile of mux_2_1.vhd was successful.
+# Compile of registrador.vhd was successful.
+# Compile of somador.vhd was successful.
+# Compile of somador_4b.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of TesteBench.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors. 
+quit -sim

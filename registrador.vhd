@@ -19,7 +19,7 @@ ARCHITECTURE behavior OF registrador IS
 
 BEGIN
 	
-	PROCESS(clock, clear)
+	PROCESS(clock, clear, enable)
 	BEGIN
 		IF (clear = '1' ) THEN
 			s <= (OTHERS => '0');

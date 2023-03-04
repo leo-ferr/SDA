@@ -24,6 +24,7 @@ BEGIN
 		in_4 WHEN "100",
 		in_5 WHEN "101",
 		in_6 WHEN "110",
-		in_7 WHEN "111";
+		in_7 WHEN "111",
+		(others => '0') WHEN others;
 	
 END behavior;

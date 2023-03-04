@@ -2,9 +2,9 @@ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 PACKAGE utils IS
-	CONSTANT n_bits: INTEGER := 7;
+	CONSTANT n_bits: INTEGER := 8;
 	 
-	TYPE matriz_8bits IS ARRAY(positive range <>) of STD_LOGIC_VECTOR(n_bits DOWNTO 0);
+	TYPE matriz_8bits IS ARRAY(7 DOWNTO 0) of STD_LOGIC_VECTOR(7 DOWNTO 0);
 	
 	COMPONENT mux_8_1 IS
 		PORT(
@@ -15,15 +15,15 @@ PACKAGE utils IS
 		);
 	END COMPONENT;
 	
-	COMPONENT mux_2_1 IS
+	COMPONENT mux_2_1
 		PORT(
-			in_0, in_1	: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
+			in_0, in_1	: IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
 			sel 			: IN  STD_LOGIC;
-			saida			: OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0)
+			saida			: OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 		);
 	END COMPONENT;
 	
-	COMPONENT registrador IS
+	COMPONENT registrador
 		PORT(
 			data 	: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
 			clock	: IN  STD_LOGIC;
@@ -33,7 +33,7 @@ PACKAGE utils IS
 		);
 	END COMPONENT;
 	
-	COMPONENT somador_completo IS
+	COMPONENT somador_completo
 		PORT(
 			a, b 		: IN  STD_LOGIC;
 			carry_in	: IN  STD_LOGIC;
@@ -42,7 +42,7 @@ PACKAGE utils IS
 		);
 	END COMPONENT;
 	
-	COMPONENT somador IS
+	COMPONENT somador
 		PORT(
 			a, b		: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
 			carry_in	: IN  STD_LOGIC;
