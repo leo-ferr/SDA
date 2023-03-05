@@ -1,169 +1,27 @@
-# Compile of datapath.vhd failed with 4 errors.
-# Compile of TesteBench.vhd failed with 4 errors.
-# 2 compiles, 2 failed with 8 errors. 
-# Compile of datapath.vhd failed with 4 errors.
-# Compile of TesteBench.vhd failed with 5 errors.
-# 2 compiles, 2 failed with 9 errors. 
-# Compile of datapath.vhd failed with 4 errors.
-# Compile of TesteBench.vhd failed with 4 errors.
-# 2 compiles, 2 failed with 8 errors. 
-# Compile of datapath.vhd failed with 4 errors.
-# Compile of TesteBench.vhd failed with 4 errors.
-# 2 compiles, 2 failed with 8 errors. 
-# Compile of datapath.vhd failed with 4 errors.
-# Compile of TesteBench.vhd failed with 4 errors.
-# Compile of utils.vhd was successful.
-# 3 compiles, 2 failed with 8 errors. 
-# Compile of datapath.vhd was successful.
-# Compile of TesteBench.vhd failed with 3 errors.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of mux_8_1.vhd failed with 2 errors.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 12 compiles, 2 failed with 5 errors. 
-# Compile of datapath.vhd was successful.
-# Compile of TesteBench.vhd failed with 3 errors.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 1 failed with 3 errors. 
-# Compile of datapath.vhd was successful.
-# Compile of TesteBench.vhd failed with 9 errors.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 1 failed with 9 errors. 
-# Compile of datapath.vhd was successful.
-# Compile of TesteBench.vhd failed with 6 errors.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 1 failed with 6 errors. 
-# Compile of datapath.vhd was successful.
-# Compile of TesteBench.vhd failed with 4 errors.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 1 failed with 4 errors. 
-# Compile of datapath.vhd was successful.
-# Compile of TesteBench.vhd failed with 1 errors.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of datapath.vhd was successful with warnings.
-# Compile of TesteBench.vhd was successful with warnings.
-# Compile of utils.vhd was successful with warnings.
 # Load canceled
-# Compile of FA.vhd was successful.
+# Compile of datapath.vhd failed with 2 errors.
 # Compile of latch_d.vhd was successful.
 # Compile of mux_2_1.vhd was successful.
+# Compile of mux_8_1.vhd was successful.
 # Compile of registrador.vhd was successful.
-# Compile of datapath.vhd was successful with warnings.
+# Compile of somador.vhd was successful.
+# Compile of somador_completo.vhd was successful.
 # Compile of TesteBench.vhd was successful with warnings.
+# Compile of ula1.vhd was successful.
 # Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-# Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 1 failed with 1 error. 
+# 10 compiles, 1 failed with 2 errors. 
 # Compile of datapath.vhd was successful.
-# Compile of TesteBench.vhd was successful with warnings.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
 # Compile of latch_d.vhd was successful.
 # Compile of mux_2_1.vhd was successful.
+# Compile of mux_8_1.vhd was successful.
 # Compile of registrador.vhd was successful.
 # Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
 # Compile of somador_completo.vhd was successful.
-# Compile of ula1.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-# Compile of datapath.vhd was successful.
 # Compile of TesteBench.vhd was successful with warnings.
-# Compile of utils.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of latch_d.vhd was successful.
-# Compile of mux_2_1.vhd was successful.
-# Compile of registrador.vhd was successful.
-# Compile of somador.vhd was successful.
-# Compile of somador_4b.vhd was successful.
-# Compile of somador_completo.vhd was successful.
 # Compile of ula1.vhd was successful.
-# 11 compiles, 0 failed with no errors. 
-# Load canceled
+# Compile of utils.vhd was successful.
+# 10 compiles, 0 failed with no errors. 
 # Load canceled
 # Compile of TesteBench.vhd was successful with warnings.
-com -work work -2002 -explicit {C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd}
-# bad option "-work": should be one of...
-#   compare add ?arg arg ...?
-#   compare annotate ?arg arg ...?
-#   compare autostart ?arg arg ...?
-#   compare clock ?arg arg ...?
-#   compare config ?arg arg ...?
-#   compare configure ?arg arg ...?
-#   compare continue
-#   compare delete ?arg arg ...?
-#   compare end ?arg arg ...?
-#   compare info ?arg arg ...?
-#   compare list ?arg arg ...?
-#   compare options ?arg arg ...?
-#   compare reload rulesFilename diffsFilename
-#   compare reset ?arg arg ...?
-#   compare resetOptions
-#   compare resetoptions
-#   compare run ?start? ?end?
-#   compare saveOptions filename
-#   compare savediffs filename
-#   compare saveoptions filename
-#   compare saverules ?arg arg ...?
-#   compare see ?arg arg ...?
-#   compare start ?arg arg ...?
-#   compare stop
-#   compare update ?arg arg ...?
+# Break key hit 
 vsim +altera -do datapath_run_msim_rtl_vhdl.do -l msim_transcript -gui work.datapath

@@ -4,33 +4,33 @@ K3
 cModel Technology
 Z0 dC:\Users\leonardo\Desktop\sda\SDA\simulation\modelsim
 Edatapath
-Z1 w1677867462
+Z1 w1678026437
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 DPx4 work 5 utils 0 22 OnYf=bVg?42i9NmIT<8YI1
+Z4 DPx4 work 5 utils 0 22 `69VNc_X771968iK1S;X[2
 Z5 dC:\Users\leonardo\Desktop\sda\SDA\simulation\modelsim
-Z6 8C:\Users\leonardo\Desktop\sda\SDA\datapath.vhd
-Z7 FC:\Users\leonardo\Desktop\sda\SDA\datapath.vhd
+Z6 8C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd
+Z7 FC:/Users/leonardo/Desktop/sda/SDA/datapath.vhd
 l0
 L6
-VV1[ZG:]]SWTzT273f:OiR0
+VJ>lj8e_8bHY0[GIzRzQhl2
 Z8 OV;C;10.1d;51
 32
-Z9 !s108 1677870118.272000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\leonardo\Desktop\sda\SDA\datapath.vhd|
-Z11 !s107 C:\Users\leonardo\Desktop\sda\SDA\datapath.vhd|
+Z9 !s108 1678030339.696000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd|
+Z11 !s107 C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd|
 Z12 o-work work -2002 -explicit -O0
 Z13 tExplicit 1
-!s100 FocaHmk4]Z>I9VNEZU;6M1
+!s100 K2GJ1:CL2Q`kU3<SVzOI31
 !i10b 1
 Abehavior
 R2
 R3
 R4
-DEx4 work 8 datapath 0 22 V1[ZG:]]SWTzT273f:OiR0
+DEx4 work 8 datapath 0 22 J>lj8e_8bHY0[GIzRzQhl2
 l38
 L25
-VnjPQE<CTIl_lcJ<=QclbO0
+VSM9E=G3oZiDA[]ZCm5z]93
 R8
 32
 R9
@@ -38,7 +38,7 @@ R10
 R11
 R12
 R13
-!s100 I5n][@dI8Inei:OP20Jm]1
+!s100 R7lXG9=TN2QaYdzMajNPf1
 !i10b 1
 Efa
 Z14 w1677845703
@@ -87,7 +87,7 @@ L4
 VPz=P=TOT`cRkGo>T`jBOD0
 R8
 32
-Z22 !s108 1677870120.115000
+Z22 !s108 1678025448.102000
 Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd|
 Z24 !s107 C:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd|
 R12
@@ -111,7 +111,7 @@ R13
 !s100 MSL@=o9@gfa8DQiT4PcXb2
 !i10b 1
 Emux_2_1
-Z25 w1677849225
+Z25 w1677935589
 R2
 R3
 R4
@@ -120,21 +120,21 @@ Z26 8C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd
 Z27 FC:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd
 l0
 L6
-VPi3F<oCSQ3;_in22XT=Q83
+VC_V>SIWZAT0J?6QS]I>2R3
 R8
 32
-Z28 !s108 1677870122.344000
+Z28 !s108 1678030340.816000
 Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd|
 Z30 !s107 C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd|
 R12
 R13
-!s100 >6J6n[>HOWKC3I:PC@U522
+!s100 i85BA<^RPM0VI]P>:;YAc1
 !i10b 1
 Abehavior
 R2
 R3
 R4
-DEx4 work 7 mux_2_1 0 22 Pi3F<oCSQ3;_in22XT=Q83
+DEx4 work 7 mux_2_1 0 22 C_V>SIWZAT0J?6QS]I>2R3
 l16
 L14
 VjRTQSL=[^1g06Uo[f]kTl2
@@ -148,41 +148,58 @@ R13
 !s100 f?b9jS?>eRCC>K3ZHzOdH2
 !i10b 1
 Emux_8_1
-R14
+Z31 w1677869408
 R2
 R3
 R4
 R5
-8C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd
-FC:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd
+Z32 8C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd
+Z33 FC:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd
 l0
 L6
 VzjYVG63G52XMU;9A^<aIn1
 R8
 32
+Z34 !s108 1678030342.292000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd|
+Z36 !s107 C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd|
 R12
 R13
 !s100 >=^7[2RET4^4bXNQcXT[U2
 !i10b 1
-!s108 1677869340.090000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd|
-!s107 C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd|
+Abehavior
+R2
+R3
+R4
+DEx4 work 7 mux_8_1 0 22 zjYVG63G52XMU;9A^<aIn1
+l17
+L15
+VUT;Z=OTSzAEc9@OK0Qk6Q0
+R8
+32
+R34
+R35
+R36
+R12
+R13
+!s100 izGELV4TgQ;5H2Xl@o;XM0
+!i10b 1
 Eregistrador
-Z31 w1677849786
+Z37 w1677849786
 R2
 R3
 R4
 R5
-Z32 8C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd
-Z33 FC:/Users/leonardo/Desktop/sda/SDA/registrador.vhd
+Z38 8C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd
+Z39 FC:/Users/leonardo/Desktop/sda/SDA/registrador.vhd
 l0
 L6
 VFY<g>D]=`V01AaAXHkDhd0
 R8
 32
-Z34 !s108 1677870123.763000
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd|
-Z36 !s107 C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd|
+Z40 !s108 1678030344.326000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd|
+Z42 !s107 C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd|
 R12
 R13
 !s100 OC2]3^iSD`X18jozNPH5T0
@@ -197,29 +214,29 @@ L16
 VSzX>3zZcQZn_0c;kAXimj1
 R8
 32
-R34
-R35
-R36
+R40
+R41
+R42
 R12
 R13
 !s100 XRfN1<<79<kEaajJ_29d?1
 !i10b 1
 Esomador
-Z37 w1677847807
+Z43 w1677847807
 R2
 R3
 R4
 R5
-Z38 8C:/Users/leonardo/Desktop/sda/SDA/somador.vhd
-Z39 FC:/Users/leonardo/Desktop/sda/SDA/somador.vhd
+Z44 8C:/Users/leonardo/Desktop/sda/SDA/somador.vhd
+Z45 FC:/Users/leonardo/Desktop/sda/SDA/somador.vhd
 l0
 L7
 VcN5a9W=>B>XjG;0IHjOLV1
 R8
 32
-Z40 !s108 1677870124.283000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador.vhd|
-Z42 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador.vhd|
+Z46 !s108 1678030345.707000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador.vhd|
+Z48 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador.vhd|
 R12
 R13
 !s100 ?:GcfA<8id4BQd:60NjFa0
@@ -234,9 +251,9 @@ L16
 VDSl`FgBUgzFge>97>jb<S1
 R8
 32
-R40
-R41
-R42
+R46
+R47
+R48
 R12
 R13
 !s100 V9AKg?BiZbm;SO?cg3bFX0
@@ -246,16 +263,16 @@ R14
 R2
 R3
 R5
-Z43 8C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd
-Z44 FC:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd
+Z49 8C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd
+Z50 FC:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd
 l0
 L4
 VobWE@JX=bg2TSYz3`Jg:50
 R8
 32
-Z45 !s108 1677870124.723000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd|
-Z47 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd|
+Z51 !s108 1677870124.723000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd|
+Z53 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd|
 R12
 R13
 !s100 9ON81nUz?k70V6QCRjUX@3
@@ -269,9 +286,9 @@ L15
 VTb@aE3Kk7^jLaYNH=J0Mb3
 R8
 32
-R45
-R46
-R47
+R51
+R52
+R53
 R12
 R13
 !s100 2m<[>iPc3_JFiI6bRz8W81
@@ -281,16 +298,16 @@ R14
 R2
 R3
 R5
-Z48 8C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd
-Z49 FC:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd
+Z54 8C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd
+Z55 FC:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd
 l0
 L4
 VVZY;DH9:5EGG^KLbQ19dC2
 R8
 32
-Z50 !s108 1677870125.342000
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd|
-Z52 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd|
+Z56 !s108 1678030347.662000
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd|
+Z58 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd|
 R12
 R13
 !s100 @RZHO@lg?YlXH^Sj4PRBg0
@@ -304,21 +321,21 @@ L13
 V^NEhDBGWoaQG:7<MH2gKK0
 R8
 32
-R50
-R51
-R52
+R56
+R57
+R58
 R12
 R13
 !s100 EkM:?5L8ol:dF8eX<HcNk0
 !i10b 1
 Etestebench
-Z53 w1677869963
+Z59 w1678032548
 R2
 R3
 R4
 R5
-Z54 8C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd
-Z55 FC:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd
+Z60 8C:/Users/leonardo/Desktop/sda/SDA/TesteBench.vhd
+Z61 FC:/Users/leonardo/Desktop/sda/SDA/TesteBench.vhd
 l0
 L6
 V`OjbQLgJiJ>Zz>2N=3;c03
@@ -326,44 +343,44 @@ V`OjbQLgJiJ>Zz>2N=3;c03
 R8
 32
 !i10b 1
-Z56 !s108 1677870674.577000
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd|
-Z58 !s107 C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd|
+Z62 !s108 1678032552.410000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/TesteBench.vhd|
+Z64 !s107 C:/Users/leonardo/Desktop/sda/SDA/TesteBench.vhd|
 R12
 R13
 Aarch_teste
 R2
 R3
 R4
-Z59 DEx4 work 10 testebench 0 22 `OjbQLgJiJ>Zz>2N=3;c03
+Z65 DEx4 work 10 testebench 0 22 `OjbQLgJiJ>Zz>2N=3;c03
 l41
 L10
-Z60 VQ3P5VF8eDS=mVl16^im4K1
-Z61 !s100 <V`NzRQSg_PeIMTVn:WFe0
+VP;alHF_S<>Ug<gdRalVDD1
+!s100 A>RVhIgVI>@:LD3hb59L<2
 R8
 32
 !i10b 1
-R56
-R57
-R58
+R62
+R63
+R64
 R12
 R13
 Eula1
-R14
+Z66 w1678027082
 R2
 R3
 R4
 R5
-Z62 8C:/Users/leonardo/Desktop/sda/SDA/ula1.vhd
-Z63 FC:/Users/leonardo/Desktop/sda/SDA/ula1.vhd
+Z67 8C:/Users/leonardo/Desktop/sda/SDA/ula1.vhd
+Z68 FC:/Users/leonardo/Desktop/sda/SDA/ula1.vhd
 l0
 L6
 VRilm?dXoob6J8_;_0EYXc1
 R8
 32
-Z64 !s108 1677870125.963000
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/ula1.vhd|
-Z66 !s107 C:/Users/leonardo/Desktop/sda/SDA/ula1.vhd|
+Z69 !s108 1678027687.819000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/ula1.vhd|
+Z71 !s107 C:/Users/leonardo/Desktop/sda/SDA/ula1.vhd|
 R12
 R13
 !s100 FfiiBW?868[fT?HYjR6kE1
@@ -376,31 +393,31 @@ DEx4 work 4 ula1 0 22 Rilm?dXoob6J8_;_0EYXc1
 l17
 L15
 VW]CgJdYM0z6;STTEL>3Lj2
-!s100 F@BQFXTK`A28Ac<YzR=HN1
 R8
 32
-R64
-R65
-R66
+R69
+R70
+R71
 R12
 R13
+!s100 F@BQFXTK`A28Ac<YzR=HN1
 !i10b 1
 Putils
 R2
 R3
-w1677849831
+w1677946519
 R5
 8C:/Users/leonardo/Desktop/sda/SDA/utils.vhd
 FC:/Users/leonardo/Desktop/sda/SDA/utils.vhd
 l0
 L4
-VOnYf=bVg?42i9NmIT<8YI1
+V`69VNc_X771968iK1S;X[2
 R8
 32
 R12
 R13
-!s100 3T854KEfeG_ai>_3OaEW;3
+!s100 ]`;jIOO<3L=V18XLaI7TT1
 !i10b 1
-!s108 1677870119.096000
+!s108 1678030350.531000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/utils.vhd|
 !s107 C:/Users/leonardo/Desktop/sda/SDA/utils.vhd|

@@ -4,311 +4,169 @@ K3
 cModel Technology
 Z0 dC:\Users\leonardo\Desktop\sda\SDA\simulation\modelsim
 Edatapath
-Z1 w1677871343
-Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 DPx4 work 5 utils 0 22 OnYf=bVg?42i9NmIT<8YI1
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 DPx4 work 5 utils 0 22 VaM=MMj>P9EM=PBmH<jAJ2
+31
+!i10b 1
+Z4 w1677943599
 Z5 dC:\Users\leonardo\Desktop\sda\SDA\simulation\modelsim
-Z6 8C:\Users\leonardo\Desktop\sda\SDA\datapath.vhd
-Z7 FC:\Users\leonardo\Desktop\sda\SDA\datapath.vhd
+Z6 8C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd
+Z7 FC:/Users/leonardo/Desktop/sda/SDA/datapath.vhd
 l0
 L6
-VG:lMUK65A0`MALnBDfo;]2
+VnoVn4N9Y<a<60gH3oh:h>2
 Z8 OV;C;10.1d;51
-32
-Z9 !s108 1677873810.553000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\leonardo\Desktop\sda\SDA\datapath.vhd|
-Z11 !s107 C:\Users\leonardo\Desktop\sda\SDA\datapath.vhd|
-Z12 o-work work -2002 -explicit -O0
+Z9 !s108 1677946007.305000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd|
+Z11 !s107 C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd|
+Z12 o-93 -work work -O0
 Z13 tExplicit 1
-!s100 fY`]gkic1]=VaVUmj18061
-!i10b 1
+!s100 K2GJ1:CL2Q`kU3<SVzOI31
 Abehavior
+R1
 R2
 R3
-R4
-DEx4 work 8 datapath 0 22 G:lMUK65A0`MALnBDfo;]2
+DEx4 work 8 datapath 0 22 noVn4N9Y<a<60gH3oh:h>2
+31
+!i10b 1
 l38
 L25
-Vff9oUUL7GWCIaYlF[`OGX1
+V_^H=7m2A<3WnONYQOX]b62
 R8
-32
 R9
 R10
 R11
 R12
 R13
-!s100 RWWa_c<0oi>7RPeLZAbHZ1
-!i10b 1
-Elatch_d
-Z14 w1677845703
+!s100 R7lXG9=TN2QaYdzMajNPf1
+Emux_2_1
+R1
 R2
 R3
+31
+!i10b 1
+Z14 w1677935589
 R5
-Z15 8C:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd
-Z16 FC:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd
+Z15 8C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd
+Z16 FC:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd
 l0
-L4
-VPz=P=TOT`cRkGo>T`jBOD0
+L6
+V5_9j=fBFT]FFQQJomJ`:Q0
 R8
-32
-Z17 !s108 1677873811.403000
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd|
-Z19 !s107 C:/Users/leonardo/Desktop/sda/SDA/latch_d.vhd|
+Z17 !s108 1677946008.114000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd|
+Z19 !s107 C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd|
 R12
 R13
-!s100 RkK`7A2ezmM<7iR]aGKA12
-!i10b 1
-Aarq_latch_d
+!s100 i85BA<^RPM0VI]P>:;YAc1
+Abehavior
+R1
 R2
 R3
-DEx4 work 7 latch_d 0 22 Pz=P=TOT`cRkGo>T`jBOD0
-l26
+DEx4 work 7 mux_2_1 0 22 5_9j=fBFT]FFQQJomJ`:Q0
+31
+!i10b 1
+l16
 L14
-VK>g7DoidXOaD:QW@hSW<o1
+VM7RE:icP@IRVN3MPBPQ4`3
 R8
-32
 R17
 R18
 R19
 R12
 R13
-!s100 MSL@=o9@gfa8DQiT4PcXb2
-!i10b 1
-Emux_2_1
-Z20 w1677849225
+!s100 f?b9jS?>eRCC>K3ZHzOdH2
+Emux_8_1
+R1
 R2
 R3
-R4
+31
+!i10b 1
+Z20 w1677869408
 R5
-Z21 8C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd
-Z22 FC:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd
+Z21 8C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd
+Z22 FC:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd
 l0
 L6
-VPi3F<oCSQ3;_in22XT=Q83
+Vn8RX6kfA^E8Cnj^GVjJ<<0
 R8
-32
-Z23 !s108 1677873812.362000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd|
-Z25 !s107 C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd|
+Z23 !s108 1677946004.001000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd|
+Z25 !s107 C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd|
 R12
 R13
-!s100 >6J6n[>HOWKC3I:PC@U522
-!i10b 1
+!s100 >=^7[2RET4^4bXNQcXT[U2
 Abehavior
+R1
 R2
 R3
-R4
-DEx4 work 7 mux_2_1 0 22 Pi3F<oCSQ3;_in22XT=Q83
-l16
-L14
-VjRTQSL=[^1g06Uo[f]kTl2
+DEx4 work 7 mux_8_1 0 22 n8RX6kfA^E8Cnj^GVjJ<<0
+31
+!i10b 1
+l17
+L15
+VdIb3ijaMDVmh0EFK@o3Q71
 R8
-32
 R23
 R24
 R25
 R12
 R13
-!s100 f?b9jS?>eRCC>K3ZHzOdH2
-!i10b 1
+!s100 izGELV4TgQ;5H2Xl@o;XM0
 Eregistrador
-Z26 w1677849786
+R1
 R2
 R3
-R4
+31
+!i10b 1
+Z26 w1677849786
 R5
 Z27 8C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd
 Z28 FC:/Users/leonardo/Desktop/sda/SDA/registrador.vhd
 l0
 L6
-VFY<g>D]=`V01AaAXHkDhd0
+Vj^b==VM`B65U2BOEgGTSH0
 R8
-32
-Z29 !s108 1677873813.372000
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd|
+Z29 !s108 1677946004.912000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd|
 Z31 !s107 C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd|
 R12
 R13
 !s100 OC2]3^iSD`X18jozNPH5T0
-!i10b 1
 Abehavior
+R1
 R2
 R3
-R4
-DEx4 work 11 registrador 0 22 FY<g>D]=`V01AaAXHkDhd0
+DEx4 work 11 registrador 0 22 j^b==VM`B65U2BOEgGTSH0
+31
+!i10b 1
 l20
 L16
-VSzX>3zZcQZn_0c;kAXimj1
+V82@3HP@S<8a;naJlLH_aM0
 R8
-32
 R29
 R30
 R31
 R12
 R13
 !s100 XRfN1<<79<kEaajJ_29d?1
-!i10b 1
-Esomador
-Z32 w1677847807
-R2
-R3
-R4
-R5
-Z33 8C:/Users/leonardo/Desktop/sda/SDA/somador.vhd
-Z34 FC:/Users/leonardo/Desktop/sda/SDA/somador.vhd
-l0
-L7
-VcN5a9W=>B>XjG;0IHjOLV1
-R8
-32
-Z35 !s108 1677873813.927000
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador.vhd|
-Z37 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador.vhd|
-R12
-R13
-!s100 ?:GcfA<8id4BQd:60NjFa0
-!i10b 1
-Abehavior
-R2
-R3
-R4
-DEx4 work 7 somador 0 22 cN5a9W=>B>XjG;0IHjOLV1
-l20
-L16
-VDSl`FgBUgzFge>97>jb<S1
-R8
-32
-R35
-R36
-R37
-R12
-R13
-!s100 V9AKg?BiZbm;SO?cg3bFX0
-!i10b 1
-Esomador_4b
-R14
-R2
-R3
-R5
-Z38 8C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd
-Z39 FC:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd
-l0
-L4
-VobWE@JX=bg2TSYz3`Jg:50
-R8
-32
-Z40 !s108 1677873814.429000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd|
-Z42 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador_4b.vhd|
-R12
-R13
-!s100 9ON81nUz?k70V6QCRjUX@3
-!i10b 1
-Aarq_somador_4b
-R2
-R3
-DEx4 work 10 somador_4b 0 22 obWE@JX=bg2TSYz3`Jg:50
-l30
-L15
-VTb@aE3Kk7^jLaYNH=J0Mb3
-R8
-32
-R40
-R41
-R42
-R12
-R13
-!s100 2m<[>iPc3_JFiI6bRz8W81
-!i10b 1
-Esomador_completo
-R14
-R2
-R3
-R5
-Z43 8C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd
-Z44 FC:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd
-l0
-L4
-VVZY;DH9:5EGG^KLbQ19dC2
-R8
-32
-Z45 !s108 1677873815.296000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd|
-Z47 !s107 C:/Users/leonardo/Desktop/sda/SDA/somador_completo.vhd|
-R12
-R13
-!s100 @RZHO@lg?YlXH^Sj4PRBg0
-!i10b 1
-Abehavior
-R2
-R3
-DEx4 work 16 somador_completo 0 22 VZY;DH9:5EGG^KLbQ19dC2
-l14
-L13
-V^NEhDBGWoaQG:7<MH2gKK0
-!s100 EkM:?5L8ol:dF8eX<HcNk0
-R8
-32
-R45
-R46
-R47
-R12
-R13
-!i10b 1
-Etestebench
-Z48 w1677873797
-R2
-R3
-R4
-R5
-Z49 8C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd
-Z50 FC:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd
-l0
-L6
-V`OjbQLgJiJ>Zz>2N=3;c03
-!s100 KaZg[>Q5lDFlhg8`M;aWZ3
-R8
-32
-!i10b 1
-Z51 !s108 1677873816.061000
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd|
-Z53 !s107 C:\Users\leonardo\Desktop\sda\SDA\TesteBench.vhd|
-R12
-R13
-Aarch_teste
-R2
-R3
-R4
-Z54 DEx4 work 10 testebench 0 22 `OjbQLgJiJ>Zz>2N=3;c03
-l41
-L10
-V=UG6>kJRmO<BK;?=7d<Ie3
-!s100 b]GAH:bc`cniQH05V_Z[z1
-R8
-32
-!i10b 1
-R51
-R52
-R53
-R12
-R13
 Putils
+R1
 R2
-R3
-w1677849831
+31
+!i10b 1
+w1677937409
 R5
 8C:/Users/leonardo/Desktop/sda/SDA/utils.vhd
 FC:/Users/leonardo/Desktop/sda/SDA/utils.vhd
 l0
 L4
-VOnYf=bVg?42i9NmIT<8YI1
+VVaM=MMj>P9EM=PBmH<jAJ2
 R8
-32
 R12
 R13
-!s100 3T854KEfeG_ai>_3OaEW;3
-!i10b 1
-!s108 1677873811.049000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/leonardo/Desktop/sda/SDA/utils.vhd|
+!s100 Y8R1iYzUQU:T7m]e:=ba31
+!s108 1677945999.993000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/leonardo/Desktop/sda/SDA/utils.vhd|
 !s107 C:/Users/leonardo/Desktop/sda/SDA/utils.vhd|

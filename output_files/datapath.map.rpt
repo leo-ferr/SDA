@@ -1,5 +1,5 @@
 Analysis & Synthesis report for datapath
-Fri Mar 03 15:17:49 2023
+Sat Mar 04 12:27:01 2023
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -14,16 +14,19 @@ Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:7:l_mux_2_1"
- 10. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:6:l_mux_2_1"
- 11. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:5:l_mux_2_1"
- 12. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:4:l_mux_2_1"
- 13. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:3:l_mux_2_1"
- 14. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:2:l_mux_2_1"
- 15. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:1:l_mux_2_1"
- 16. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:0:l_mux_2_1"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "mux_8_1:\for_mux_8_1:1:muxs_8_1"
+ 11. Port Connectivity Checks: "mux_8_1:\for_mux_8_1:0:muxs_8_1"
+ 12. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:7:muxes_2_1"
+ 13. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:6:muxes_2_1"
+ 14. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:5:muxes_2_1"
+ 15. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:4:muxes_2_1"
+ 16. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:3:muxes_2_1"
+ 17. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:2:muxes_2_1"
+ 18. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:1:muxes_2_1"
+ 19. Port Connectivity Checks: "mux_2_1:\for_mux_2_1:0:muxes_2_1"
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -49,16 +52,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 03 15:17:49 2023      ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 04 12:27:00 2023      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; datapath                                   ;
 ; Top-level Entity Name              ; datapath                                   ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 64                                         ;
-;     Total combinational functions  ; 64                                         ;
+; Total logic elements               ; 104                                        ;
+;     Total combinational functions  ; 104                                        ;
 ;     Dedicated logic registers      ; 64                                         ;
 ; Total registers                    ; 64                                         ;
-; Total pins                         ; 103                                        ;
+; Total pins                         ; 111                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -173,6 +176,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
 ; utils.vhd                        ; yes             ; User VHDL File  ; C:/Users/leonardo/Desktop/sda/SDA/utils.vhd       ;         ;
+; mux_8_1.vhd                      ; yes             ; User VHDL File  ; C:/Users/leonardo/Desktop/sda/SDA/mux_8_1.vhd     ;         ;
 ; datapath.vhd                     ; yes             ; User VHDL File  ; C:/Users/leonardo/Desktop/sda/SDA/datapath.vhd    ;         ;
 ; mux_2_1.vhd                      ; yes             ; User VHDL File  ; C:/Users/leonardo/Desktop/sda/SDA/mux_2_1.vhd     ;         ;
 ; registrador.vhd                  ; yes             ; User VHDL File  ; C:/Users/leonardo/Desktop/sda/SDA/registrador.vhd ;         ;
@@ -184,12 +188,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 103              ;
+; I/O pins                 ; 111              ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; clock~input      ;
 ; Maximum fan-out          ; 64               ;
-; Total fan-out            ; 551              ;
-; Average fan-out          ; 1.65             ;
+; Total fan-out            ; 719              ;
+; Average fan-out          ; 1.84             ;
 +--------------------------+------------------+
 
 
@@ -198,15 +202,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
 ; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Library Name ;
 +---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
-; |datapath                             ; 64 (0)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 103  ; 0            ; |datapath                                  ; work         ;
-;    |mux_2_1:\for_mux_2_1:0:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:0:l_mux_2_1 ; work         ;
-;    |mux_2_1:\for_mux_2_1:1:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:1:l_mux_2_1 ; work         ;
-;    |mux_2_1:\for_mux_2_1:2:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:2:l_mux_2_1 ; work         ;
-;    |mux_2_1:\for_mux_2_1:3:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:3:l_mux_2_1 ; work         ;
-;    |mux_2_1:\for_mux_2_1:4:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:4:l_mux_2_1 ; work         ;
-;    |mux_2_1:\for_mux_2_1:5:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:5:l_mux_2_1 ; work         ;
-;    |mux_2_1:\for_mux_2_1:6:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:6:l_mux_2_1 ; work         ;
-;    |mux_2_1:\for_mux_2_1:7:l_mux_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:7:l_mux_2_1 ; work         ;
+; |datapath                             ; 104 (0)           ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 111  ; 0            ; |datapath                                  ; work         ;
+;    |mux_2_1:\for_mux_2_1:0:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:0:muxes_2_1 ; work         ;
+;    |mux_2_1:\for_mux_2_1:1:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:1:muxes_2_1 ; work         ;
+;    |mux_2_1:\for_mux_2_1:2:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:2:muxes_2_1 ; work         ;
+;    |mux_2_1:\for_mux_2_1:3:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:3:muxes_2_1 ; work         ;
+;    |mux_2_1:\for_mux_2_1:4:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:4:muxes_2_1 ; work         ;
+;    |mux_2_1:\for_mux_2_1:5:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:5:muxes_2_1 ; work         ;
+;    |mux_2_1:\for_mux_2_1:6:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:6:muxes_2_1 ; work         ;
+;    |mux_2_1:\for_mux_2_1:7:muxes_2_1| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_2_1:\for_mux_2_1:7:muxes_2_1 ; work         ;
+;    |mux_8_1:\for_mux_8_1:2:muxs_8_1|  ; 40 (40)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|mux_8_1:\for_mux_8_1:2:muxs_8_1  ; work         ;
 ;    |registrador:\for_regs:0:regs|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|registrador:\for_regs:0:regs     ; work         ;
 ;    |registrador:\for_regs:1:regs|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|registrador:\for_regs:1:regs     ; work         ;
 ;    |registrador:\for_regs:2:regs|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |datapath|registrador:\for_regs:2:regs     ; work         ;
@@ -234,8 +239,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |datapath|mux_8_1:\for_mux_8_1:2:muxs_8_1|Mux3 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8_1:\for_mux_8_1:1:muxs_8_1"                                                     ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; saida ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_8_1:\for_mux_8_1:0:muxs_8_1"                                                     ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; saida ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:7:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:7:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -244,7 +276,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:6:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:6:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -253,7 +285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:5:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:5:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -262,7 +294,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:4:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:4:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -271,7 +303,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:3:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:3:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -280,7 +312,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:2:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:2:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -289,7 +321,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:1:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:1:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -298,7 +330,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:0:l_mux_2_1" ;
+; Port Connectivity Checks: "mux_2_1:\for_mux_2_1:0:muxes_2_1" ;
 +------+-------+----------+------------------------------------+
 ; Port ; Type  ; Severity ; Details                            ;
 +------+-------+----------+------------------------------------+
@@ -311,7 +343,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -321,15 +353,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Mar 03 15:17:45 2023
+    Info: Processing started: Sat Mar 04 12:26:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file somador_4b.vhd
     Info (12022): Found design unit 1: somador_4b-arq_somador_4b
     Info (12023): Found entity 1: somador_4b
-Info (12021): Found 2 design units, including 1 entities, in source file fa.vhd
-    Info (12022): Found design unit 1: FA-arq_FA
-    Info (12023): Found entity 1: FA
 Info (12021): Found 1 design units, including 0 entities, in source file utils.vhd
     Info (12022): Found design unit 1: utils
 Info (12021): Found 2 design units, including 1 entities, in source file mux_8_1.vhd
@@ -353,14 +382,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file somador
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
     Info (12022): Found design unit 1: somador-behavior
     Info (12023): Found entity 1: somador
-Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
-    Info (12022): Found design unit 1: comparador-behavior
-    Info (12023): Found entity 1: comparador
 Info (12021): Found 2 design units, including 1 entities, in source file teste.vhd
     Info (12022): Found design unit 1: teste-behavior
     Info (12023): Found entity 1: teste
 Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "mux_2_1" for hierarchy "mux_2_1:\for_mux_2_1:0:l_mux_2_1"
+Info (12128): Elaborating entity "mux_2_1" for hierarchy "mux_2_1:\for_mux_2_1:0:muxes_2_1"
 Info (10041): Inferred latch for "saida[0]" at mux_2_1.vhd(18)
 Info (10041): Inferred latch for "saida[1]" at mux_2_1.vhd(18)
 Info (10041): Inferred latch for "saida[2]" at mux_2_1.vhd(18)
@@ -370,31 +396,29 @@ Info (10041): Inferred latch for "saida[5]" at mux_2_1.vhd(18)
 Info (10041): Inferred latch for "saida[6]" at mux_2_1.vhd(18)
 Info (10041): Inferred latch for "saida[7]" at mux_2_1.vhd(18)
 Info (12128): Elaborating entity "registrador" for hierarchy "registrador:\for_regs:0:regs"
+Info (12128): Elaborating entity "mux_8_1" for hierarchy "mux_8_1:\for_mux_8_1:0:muxs_8_1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 13 input pin(s) that do not drive logic
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "c[16]"
     Warning (15610): No output dependent on input pin "c[17]"
     Warning (15610): No output dependent on input pin "c[18]"
     Warning (15610): No output dependent on input pin "c[19]"
     Warning (15610): No output dependent on input pin "c[20]"
     Warning (15610): No output dependent on input pin "c[21]"
-    Warning (15610): No output dependent on input pin "c[22]"
-    Warning (15610): No output dependent on input pin "c[23]"
-    Warning (15610): No output dependent on input pin "c[24]"
     Warning (15610): No output dependent on input pin "c[25]"
     Warning (15610): No output dependent on input pin "c[26]"
     Warning (15610): No output dependent on input pin "c[27]"
     Warning (15610): No output dependent on input pin "c[28]"
-Info (21057): Implemented 167 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 215 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 39 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 64 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 440 megabytes
-    Info: Processing ended: Fri Mar 03 15:17:50 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+    Info (21059): Implemented 72 output pins
+    Info (21061): Implemented 104 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 436 megabytes
+    Info: Processing ended: Sat Mar 04 12:27:01 2023
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:04
 
 

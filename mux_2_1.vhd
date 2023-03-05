@@ -5,9 +5,9 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY mux_2_1 IS
 	PORT(
-		in_0, in_1	: IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+		in_0, in_1	: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
 		sel 			: IN  STD_LOGIC;
-		saida			: OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+		saida			: OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0)
 	);
 END mux_2_1;
 
