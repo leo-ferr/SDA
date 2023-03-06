@@ -8,14 +8,14 @@ ENTITY somador IS
 	PORT(
 		a, b		: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
 		carry_in	: IN  STD_LOGIC;
-		Ov			: OUT STD_LOGIC;
+		Ov, Cout	: OUT STD_LOGIC;
 		saida 	: OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0)
 	);
 END somador;
 
 ARCHITECTURE behavior OF somador IS
 
-	SIGNAL c0, c1, c2, c3, c4, c5, c6: STD_LOGIC;
+	SIGNAL c0, c1, c2, c3, c4, c5, c6, c7: STD_LOGIC;
 	
 BEGIN
 	
@@ -26,6 +26,9 @@ BEGIN
 	bit4: somador_completo PORT MAP(a => a(4), b => b(4), carry_in => c3, carry_out => c4, saida => saida(4));
 	bit5: somador_completo PORT MAP(a => a(5), b => b(5), carry_in => c4, carry_out => c5, saida => saida(5));
 	bit6: somador_completo PORT MAP(a => a(6), b => b(6), carry_in => c5, carry_out => c6, saida => saida(6));
-	bit7: somador_completo PORT MAP(a => a(7), b => b(7), carry_in => c6, carry_out => Ov, saida => saida(7));
+	bit7: somador_completo PORT MAP(a => a(7), b => b(7), carry_in => c6, carry_out => c7, saida => saida(7));
+	
+	Cout <= c7;
+	Ov <= c7 XOR c6;
 	
 END behavior;

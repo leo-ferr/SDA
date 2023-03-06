@@ -1,6 +1,6 @@
 LIBRARY IEEE;
 LIBRARY WORK;
-USE WORK.UTILS.n_bits;
+USE WORK.UTILS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY ula1 IS
@@ -14,34 +14,38 @@ END ula1;
 
 ARCHITECTURE behavior OF ula1 IS
 	SIGNAL s: STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
+	SIGNAL saida_soma : STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
+	SIGNAL soma_Ov, soma_Cout : STD_LOGIC;
 BEGIN
+
+	soma: somador PORT MAP(
+					a => a,
+					b => b,
+					carry_in	=> '0',
+					Ov => soma_Ov,
+					Cout => soma_Cout,
+					saida => saida_soma
+				);
 	
 	PROCESS(a, b, op)
 	BEGIN
 		IF (op = "00") THEN
 			s <= a;
-			Ov <= '0';
-			Cout <= '0';
 			
 		ELSIF (op = "01") THEN
 			s <= a OR b;
-			Ov <= '0';
-			Cout <= '0';
 			
 		ELSIF (op = "10") THEN
-			--soma: PORT MAP somador(a => a, b => b, carry_in => '0', Ov => Ov, saida => saida);
-			--s <= a + b;
-			Ov <= '0';
-			Cout <= '0';
+			s <= saida_soma;
 			
 		ELSIF (op = "11") THEN
 			s <= a XOR (NOT b);
-			Ov <= '0';
-			Cout <= '0';
 		
 		END IF;
 	END PROCESS;
 	
 	saida <= s;
+	Ov <= soma_Ov OR '0';
+	Cout <= soma_Cout OR '0';
 
 END behavior;

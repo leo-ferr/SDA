@@ -7,6 +7,24 @@ PACKAGE utils IS
 	TYPE matriz_8bits IS ARRAY(n_bits - 1 DOWNTO 0) OF STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
 	TYPE matriz_8bits_2 IS ARRAY(2 DOWNTO 0) OF STD_LOGIC_VECTOR(n_bits -1 DOWNTO 0);
 	
+	COMPONENT ula2 IS
+		PORT(
+			c, d		: IN STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
+			op			: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+			N,Z		: OUT STD_LOGIC;
+			saida 	: OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0)
+		);
+	END COMPONENT;
+	
+	COMPONENT ula1 IS
+		PORT(
+			a, b		: IN STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
+			op			: IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+			Ov, Cout	: OUT STD_LOGIC;
+			saida 	: OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0)
+		);
+	END COMPONENT;
+
 	COMPONENT mux_8_1 IS
 		PORT(
 			in_0, in_1, in_2, in_3: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
@@ -47,9 +65,23 @@ PACKAGE utils IS
 		PORT(
 			a, b		: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
 			carry_in	: IN  STD_LOGIC;
-			Ov			: IN  STD_LOGIC;
+			Ov, Cout	: OUT STD_LOGIC;
 			saida 	: OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0)
 		);
 	END COMPONENT;
 
 END PACKAGE utils;
+
+PACKAGE BODY utils IS
+	FUNCTION check_zero(input: STD_LOGIC_VECTOR) RETURN STD_LOGIC IS
+		VARIABLE check : STD_LOGIC := '0';
+	BEGIN
+		FOR i IN 0 TO n_bits - 1 LOOP
+			check := check or input(i);
+		END LOOP;
+		
+		RETURN check;
+	END FUNCTION check_zero;
+END PACKAGE BODY utils;
+
+

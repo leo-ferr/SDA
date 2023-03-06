@@ -1,0 +1,115 @@
+C:/Users/alunos/Desktop/SDA-main/SDA-main/ula1.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/ula1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity ula1
+-- Compiling architecture behavior of ula1
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/datapath.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/datapath.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity datapath
+-- Compiling architecture behavior of datapath
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/somador_completo.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/somador_completo.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity somador_completo
+-- Compiling architecture behavior of somador_completo
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/mux_2_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/mux_2_1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity mux_2_1
+-- Compiling architecture behavior of mux_2_1
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/ula2.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/ula2.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity ula2
+-- Compiling architecture behavior of ula2
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/utils.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/utils.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package utils
+-- Compiling package body utils
+-- Loading package utils
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/somador.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/somador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity somador
+-- Compiling architecture behavior of somador
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd {2 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity TesteBench
+-- Compiling architecture arch_teste of TesteBench
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(68): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(70): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(90): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(95): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(98): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(103): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(113): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(124): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(127): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(138): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(141): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/alunos/Desktop/SDA-main/SDA-main/TesteBench.vhd(152): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/mux_8_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/mux_8_1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity mux_8_1
+-- Compiling architecture behavior of mux_8_1
+
+} {} {}} C:/Users/alunos/Desktop/SDA-main/SDA-main/registrador.vhd {1 {vcom -work work -2002 -explicit C:/Users/alunos/Desktop/SDA-main/SDA-main/registrador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package utils
+-- Compiling entity registrador
+-- Compiling architecture behavior of registrador
+
+} {} {}}

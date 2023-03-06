@@ -10,11 +10,7 @@ ENTITY datapath IS
 		data_in		: IN  STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
 		c 				: IN  STD_LOGIC_VECTOR(28 DOWNTO 0);
 		-- flags
-		--N,Z,Ov,Cout : OUT STD_LOGIC;
-		
-		-- debug
-		DEBUG : OUT matriz_8bits;
-		--DEBUG : OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0);
+		N,Z,Ov,Cout : OUT STD_LOGIC;
 		
 		-- saida dados
 		data_out		: OUT STD_LOGIC_VECTOR(n_bits - 1 DOWNTO 0)
@@ -44,7 +40,7 @@ BEGIN
 	for_mux_2_1: FOR i IN 0 TO n_bits - 1 GENERATE
 		muxes_2_1: mux_2_1 PORT MAP(
 							in_0 => data_in, 
-							in_1 => "11111111", 
+							in_1 => saida_ula_2, 
 							sel => c(i), 
 							saida => saidas_mux_2_1(i)
 						);
@@ -62,9 +58,6 @@ BEGIN
 				);
 	END GENERATE for_regs;
 	
-	DEBUG <= saidas_regs;
-	
-	
 	--cria os mux de 8 para 1, conectados as portas das ulas
 	for_mux_8_1: FOR i IN 0 TO 2 GENERATE
 		muxs_8_1: mux_8_1 PORT MAP(
@@ -81,6 +74,24 @@ BEGIN
 					);
 	END GENERATE for_mux_8_1;
 	
+	primeira_ula: 
+	ula1 PORT MAP (
+		a => saidas_mux_8_1(1),
+		b => saidas_mux_8_1(2),
+		op => c(26 DOWNTO 25),
+		Ov => Ov,
+		Cout => Cout,
+		saida => saida_ula_1
+	);
 	
+	segunda_ula: 
+	ula2 PORT MAP (
+		c => saidas_mux_8_1(0),
+		d => saida_ula_1,
+		op => c(28 DOWNTO 27),
+		N => N,
+		Z => Z,
+		saida => saida_ula_2
+	);
 	
 END behavior;
