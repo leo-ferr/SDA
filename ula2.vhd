@@ -19,10 +19,10 @@ ARCHITECTURE behavior OF ula2 IS
 		VARIABLE check : STD_LOGIC := '0';
 	BEGIN
 		FOR i IN 0 TO n_bits - 1 LOOP
-			check := check XOR input(i);
+			check := check OR input(i);
 		END LOOP;
 		
-		RETURN check;
+		RETURN NOT check;
 	END FUNCTION check_zero;
 	
 BEGIN

@@ -53,104 +53,209 @@ begin
 		--data_out => open
 	);
 	
-	reset <= '1', '0' after 100 ps;
+	reset <= '1', '0' after 100ps;
 	
 	clock_signal: process
   begin
-    clock <= '1', '0' after 1 ns;
-    wait for 2ns;
+    clock <= '1', '0' after 0.5ns;
+    wait for 1ns;
   end process;
 	
 	main: process
 	begin
 		
-		data_in <= (others => '0');
-		wait for 0.5ns;
-    C <= (others => '0');
-    wait for 3ns;
+		-- COLOCA VALORES NOS REGISTRADORES
     
 		data_in <= "01010000";
 		wait for 0.5ns;
 		C <= (8 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
 		data_in <= "10101010";
 		wait for 0.5ns;
 		C <= (9 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
 		data_in <= "11111110";
 		wait for 0.5ns;
 		C <= (10 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
 		data_in <= "11110000";
 		wait for 0.5ns;
 		C <= (11 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
 		data_in <= "00001111";
 		wait for 0.5ns;
 		C <= (12 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
 		data_in <= "00111100";
 		wait for 0.5ns;
 		C <= (13 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
 		data_in <= "11000011";
 		wait for 0.5ns;
 		C <= (14 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
 		data_in <= "01101101";
 		wait for 0.5ns;
 		C <= (15 => '1', others => '0');
-		wait for 3ns;
+		wait for 1ns;
 		
-		data_in <= "00011100";
-		wait for 0.5ns;
-		C <= (-- primeiro mux_8_1
-		      16 => '0', 17 => '0', 18 => '0',
+		
+		-- VERIFICA SAIDA DOS MUX_8_1
+		--data_in <= "00011100";
+		--wait for 0.5ns;
+		--C <= (-- primeiro mux_8_1
+		--      16 => '0', 17 => '0', 18 => '0',
 		      
 		      -- segundo mux_8_1
-		      19 => '1', 20 => '0', 21 => '0',
+		--      19 => '1', 20 => '0', 21 => '0',
 		      
 		      -- terceiro mux_8_1
-		      22 => '0', 23 => '1', 24 => '0',
+		--      22 => '0', 23 => '1', 24 => '0',
 		      
-		      others => '0');
-		wait for 3ns;
+		--      others => '0');
+		--wait for 1ns;
 		
-		data_in <= "10000000";
-		wait for 0.5ns;
-		C <= (-- primeiro mux_8_1
-		      16 => '1', 17 => '1', 18 => '0',
+		--data_in <= "10000000";
+		--wait for 0.5ns;
+		--C <= (-- primeiro mux_8_1
+		--      16 => '1', 17 => '1', 18 => '0',
 		      
 		      -- segundo mux_8_1
-		      19 => '0', 20 => '0', 21 => '1',
+		--      19 => '0', 20 => '0', 21 => '1',
 		      
 		      -- terceiro mux_8_1
-		      22 => '1', 23 => '0', 24 => '1',
+		--      22 => '1', 23 => '0', 24 => '1',
 		      
-		      others => '0');
-		wait for 3ns;
+		--      others => '0');
+		--wait for 1ns;
 		
-		data_in <= "00011000";
-		wait for 0.5ns;
-		C <= (-- primeiro mux_8_1
-		      16 => '0', 17 => '1', 18 => '1',
+		--data_in <= "00011000";
+		--wait for 0.5ns;
+		--C <= (-- primeiro mux_8_1
+		--      16 => '0', 17 => '1', 18 => '1',
 		      
 		      -- segundo mux_8_1
-		      19 => '1', 20 => '1', 21 => '1',
+		--      19 => '1', 20 => '1', 21 => '1',
 		      
 		      -- terceiro mux_8_1
-		      22 => '0', 23 => '0',  24 => '0',
+		--      22 => '0', 23 => '0',  24 => '0',
 		      
-		      others => '0');
-		wait for 3ns;
-
+		--      others => '0');
+		--wait for 1ns;
+		
+		-- VERIFICA OPERÇÕES
+		-- R7 = R0 + R1
+		data_in <= "00000000";
+		wait for 0.1ns;
+    C <= (
+          7 => '1',
+          15 => '1',
+          
+          -- primeiro mux_8_1
+		      18 => '0', 17 => '1', 16 => '1',
+		      
+		      -- segundo mux_8_1
+		      21 => '0', 20 => '0', 19 => '1',
+		      
+		      -- terceiro mux_8_1
+		      24 => '0', 23 => '0',  22 => '0',
+		      
+		      -- código operação ULA 1
+		      25 => '1', 26 => '0',
+		      
+		      -- código operação ULA 2
+		      27 => '0', 28 => '0',
+		      
+		      others => '0'
+		     );
+		     
+		wait for 1ns;
+		
+		-- R6 = R1 << 1
+		data_in <= "00000000";
+		wait for 0.1ns;
+    C <= (
+          6 => '1',
+          14 => '1',
+          
+          -- primeiro mux_8_1
+		      18 => '0', 17 => '0', 16 => '0',
+		      
+		      -- segundo mux_8_1
+		      21 => '0', 20 => '0', 19 => '1',
+		      
+		      -- terceiro mux_8_1
+		      24 => '0', 23 => '0',  22 => '0',
+		      
+		      -- código operação ULA 1
+		      25 => '0', 26 => '0',
+		      
+		      -- código operação ULA 2
+		      27 => '0', 28 => '1',
+		      
+		      others => '0'
+		     );
+		
+		wait for 1ns;
+		
+		-- R5 = R3 AND (NOT R1)
+		data_in <= "00000000";
+		wait for 0.1ns;
+    C <= (
+          5 => '1',
+          13 => '1',
+          -- primeiro mux_8_1
+		      18 => '0', 17 => '1', 16 => '1',
+		      
+		      -- segundo mux_8_1
+		      21 => '0', 20 => '0', 19 => '1',
+		      
+		      -- terceiro mux_8_1
+		      24 => '0', 23 => '0',  22 => '0',
+		      
+		      -- código operação ULA 1
+		      25 => '0', 26 => '0',
+		      
+		      -- código operação ULA 2
+		      27 => '1', 28 => '1',
+		      
+		      others => '0'
+		     );
+		     
+		wait for 1ns;
+		
+		-- R4 = R2 OR R7
+		data_in <= "00000000";
+		wait for 0.1ns;
+    C <= (
+          4 => '1',
+          12 => '1',
+          -- primeiro mux_8_1
+		      18 => '0', 17 => '1', 16 => '1',
+		      
+		      -- segundo mux_8_1
+		      21 => '0', 20 => '1', 19 => '0',
+		      
+		      -- terceiro mux_8_1
+		      24 => '1', 23 => '1',  22 => '1',
+		      
+		      -- código operação ULA 1
+		      25 => '1', 26 => '0',
+		      
+		      -- código operação ULA 2
+		      27 => '0', 28 => '0',
+		      
+		      others => '0'
+		     );
+		
+    wait;
 	end process;	
 end arch_teste;
 
